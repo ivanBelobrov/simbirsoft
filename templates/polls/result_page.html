@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}
+Результаты теста {{ quiz.title }}
+{% endblock %}
+{% block content %}
+    <h1 style="text-align: center">Тест {{ quiz.title }} окончен</h1>
+    <div style="text-align: center; border: 1px solid black; border-radius: 10px; background-color: antiquewhite; padding: 10px">
+        <p>Вы справились с тестом на {{ result }} %</p>
+    </div>
+{% endblock %}
